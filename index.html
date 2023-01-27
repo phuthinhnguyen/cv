@@ -818,7 +818,7 @@
        
     </div>
     <footer>
-        <a href="" id="totop"><i class="fa fa-arrow-up" aria-hidden="true"></i>To the top</a>
+        <a href="#top" id="totop"><i class="fa fa-arrow-up" aria-hidden="true"></i>To the top</a>
         <div class="link">
             <a href="https://www.facebook.com/profile.php?id=100009223194372" target="_blank"><i class="fa fa-facebook-official"></i></a>
             <a href="https://www.instagram.com/phuthinhnguyen1407/" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -834,6 +834,9 @@
     </div>
     
     <script>
+       
+            
+
         // Change style of navbar on scroll
         window.onscroll = function() {myFunction()};
         function myFunction() {
@@ -894,6 +897,12 @@
         });
         document.querySelector(".close").addEventListener("click", () => {
         modalEle.style.display = "none";
+        });
+
+
+        //go to top
+        $("a[href='#top']").click(function() {
+        $("html").animate({ scrollTop: 0 }, "slow");
         });
     </script>
 </body>
